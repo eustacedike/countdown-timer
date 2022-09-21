@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="formm" id="formm">
+    <form action="">
+      <h1>COUNTDOWN TIMER</h1>
+      <div class="timer">
+        <div class="time-big">
+          <div class="time-box"><input id='theday' type="number">
+            <div class="circ"></div>
+            <div class="circa"></div>
+          </div>
+          <h3>DAYS</h3>
+        </div>
+        <div class="time-big">
+          <div class="time-box"><input id='thehr' type="number">
+            <div class="circ"></div>
+            <div class="circa"></div>
+          </div>
+          <h3>HOURS</h3>
+        </div>
+        <div class="time-big">
+          <div class="time-box"><input id='themin' type="number">
+            <div class="circ"></div>
+            <div class="circa"></div>
+          </div>
+          <h3>MINUTES</h3>
+        </div>
+        <div class="time-big">
+          <div class="time-box"><input id='thesec' type="number">
+            <div class="circ"></div>
+            <div class="circa"></div>
+          </div>
+          <h3>SECONDS</h3>
+        </div>
+      </div>
+    <button class="time-btn" onclick="countDown()">SET TIMER</button>
+
+    <div class="social">
+      <img src="./images/icon-facebook.svg" alt="">
+      <img src="./images/icon-pinterest.svg" alt="">
+      <img src="./images/icon-instagram.svg" alt="">
+    </div>  
+  </form>
+    
+  
+  </div>
+
+  <div class="main" id="main" style="display: none;">
+    <h1>WE'RE LAUNCHING SOON</h1>
+    <div class="timer">
+      <div class="time-big">
+        <div class="time-box"><span id="dys">08</span>
+          <div class="circ"></div>
+          <div class="circa"></div>
+        </div>
+        <h3>DAYS</h3>
+      </div>
+      <div class="time-big">
+        <div class="time-box"><span id="hrs">23</span>
+          <div class="circ"></div>
+          <div class="circa"></div>
+        </div>
+        <h3>HOURS</h3>
+      </div>
+      <div class="time-big">
+        <div class="time-box"><span id="mins">11</span>
+          <div class="circ"></div>
+          <div class="circa"></div>
+        </div>
+        <h3>MINUTES</h3>
+      </div>
+      <div class="time-big">
+        <div class="time-box"><span id="secs">34</span>
+          <div class="circ"></div>
+          <div class="circa"></div>
+        </div>
+        <h3>SECONDS</h3>
+      </div>
+      
+    </div>
+
+    <button class="time-btn" onclick="fresher()">REFRESH</button>
+
+
+    <div class="social">
+      <img src="./images/icon-facebook.svg" alt="">
+      <img src="./images/icon-pinterest.svg" alt="">
+      <img src="./images/icon-instagram.svg" alt="">
+    </div>
+  </div>
+
+
+  <div class="main" id="launch" style="display: none;">
+    <h1>WE ARE LIVE</h1>
+
+    <button class="time-btn" onclick="fresher()">REFRESH</button>
+
+    
+    <div class="social">
+      <img src="./images/icon-facebook.svg" alt="">
+      <img src="./images/icon-pinterest.svg" alt="">
+      <img src="./images/icon-instagram.svg" alt="">
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
