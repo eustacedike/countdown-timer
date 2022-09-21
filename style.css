@@ -14,6 +14,7 @@ body {
     background-size: 100% auto;
     text-align: center;
     color: white;
+background-attachment: fixed;
     /* background: linear-gradient(red, blue); */
 }
 
@@ -263,6 +264,9 @@ hr {
     h3 {
         font-size: smaller;
     }
+
+#launch h1 {
+font-size: 90px;
 }
 
 
